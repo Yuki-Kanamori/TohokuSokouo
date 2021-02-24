@@ -4,17 +4,25 @@ require(mapdata)
 require(openxlsx)
 
 
+# directory -----------------------------------------------------
 dir_input = "/Users/Yuki/Dropbox/業務/若鷹丸調査結果まとめ_東北底魚研究/2020年度/input"
 dir_output = "/Users/Yuki/Dropbox/業務/若鷹丸調査結果まとめ_東北底魚研究/2020年度/output"
 
+
+
+# data ----------------------------------------------------------
 mapdata = data.frame(read.csv(paste0(dir_input, "/marmap_coord.csv")))
-pointsdata = read.xlsx(paste0(dir_input, "/in_操業記録データ2020.xlsx"), sheet = 1, startRow = 1)
+
+pointsdata = read.xlsx(paste0(dir_input, "/in_操業記録データ.xlsx"), sheet = 1, startRow = 1)
 pointsdata = pointsdata[, c(1, 16:19)]
 colnames(pointsdata) = c("station", "lat1", "lat2", "lon1", "lon2")
 pointsdata = pointsdata %>% mutate(lat = lat1+lat2/60, lon = lon1+lon2/60) %>% select(station, lon, lat)
 unique(pointsdata$station)
 pointsdata$station = factor(pointsdata$station, levels = c("A", "B", "C", "D", "E", "F", "G", "H"))
 
+
+
+# function ------------------------------------------------------
 plot_surveypoints = function(dir_input, dir_output, mapdata, pointsdata){
   # map data
   colnames(mapdata) = c("long","lat","depth")
@@ -37,6 +45,8 @@ plot_surveypoints = function(dir_input, dir_output, mapdata, pointsdata){
 }
 
 
+
+# plot ----------------------------------------------------------
 plot_surveypoints(dir_input = dir_input,
                   dir_output = dir_output,
                   mapdata = mapdata,
