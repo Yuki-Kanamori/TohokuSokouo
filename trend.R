@@ -35,7 +35,8 @@ plot_trend = function(data){
 
   
   for(i in 1:length(sp)){
-    data2 = data %>% filter(sp == sp[i])
+    # data2 = data %>% filter(sp == sp[i]) #なぜかうまく引っ掛からない
+    data2 = data[data$sp == sp[i], ]
     
     g = ggplot(data2, aes(x = year, y = sum/1000, fill = NS))
     b = geom_bar(stat = "identity", width = 1, colour = "black")
