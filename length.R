@@ -81,7 +81,7 @@ plot_length = function(data){
     g = ggplot(data3, aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
     b = geom_bar(position="dodge", stat = "identity", width = 1)
     f = facet_wrap(~ year, ncol = 6)
-    c = scale_fill_manual(values = c("black", "red"))
+    c = scale_fill_manual(values = c("black", "orangered"))
     lab = labs(x = "体長（cm）", y = "尾数 (百万尾)", colour = "エリア")
     
     th = theme(panel.grid.major = element_blank(),
