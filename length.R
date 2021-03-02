@@ -45,39 +45,33 @@ plot_length = function(data){
   sp = unique(data$sp)
   
   for(i in 1:length(sp)){
-    # data2 = data %>% dplyr::filter(sp == sp[i]) #なぜかうまく引っ掛からない
-    # i = 5
     data2 = data[str_detect(data$sp, sp[i]), ]
     check = data2 %>% group_by(year) %>% summarize(sum = sum(B)) %>% filter(sum == 0)
     remove = check$year
     
-    # check2 = data2 %>% group_by(size_cate) %>% summarize(sum = sum(B)) %>% filter(sum == 0)
-    # remove2 = as.numeric(check2$size_cate)
-    # remove2 = remove2[-1]
-    
     summary(data2)
     
-    # if(nrow(check) > 0){
-    #   if(nrow(check2) > 1){
-    #     data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(year != remove, size_cate < min(remove2))
-    #   }else{
-    #     data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(year != remove) 
-    #   }
-    # }else{
-    #   if(nrow(check2) > 1){
-    #     data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(nsize < min(remove2))
-    #   }else{
-    #     data3 = data2
-    #   }
-    # }
-    
+    # 欠損データがある年を除去
     if(nrow(check) > 0){
-      data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(year != remove)
+      data3 = data2 %>% filter(year != remove)
     }else{
       data3 = data2
     }
     
+    # # コホートが見やすいように，不要な体長クラスを削除
+    # check2 = data2 %>% group_by(size_cate) %>% summarize(sum = sum(B)) %>% filter(sum == 0)
+    # remove2 = as.numeric(check2$size_cate)
+    # 
+    # if(length(remove2) > 1){
+    #   remove2 = remove2[-1]
+    #   ata4 = data3 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(nsize < max(remove2))
+    # }else{
+    #   data4 = data3
+    # }
+  
     
+      
+    # 作図
     g = ggplot(data3, aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
     b = geom_bar(position="dodge", stat = "identity", width = 1)
     f = facet_wrap(~ year, ncol = 6)
