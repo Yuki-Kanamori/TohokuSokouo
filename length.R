@@ -46,7 +46,7 @@ plot_length = function(data){
   
   for(i in 1:length(sp)){
     # data2 = data %>% dplyr::filter(sp == sp[i]) #なぜかうまく引っ掛からない
-    i = 5
+    # i = 5
     data2 = data[str_detect(data$sp, sp[i]), ]
     check = data2 %>% group_by(year) %>% summarize(sum = sum(B)) %>% filter(sum == 0)
     remove = check$year
