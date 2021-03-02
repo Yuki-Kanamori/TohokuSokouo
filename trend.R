@@ -40,7 +40,7 @@ plot_trend = function(data){
     g = ggplot(data2, aes(x = year, y = sum/1000, fill = NS))
     b = geom_bar(stat = "identity", width = 1, colour = "black")
     f = facet_wrap(~ data, ncol = 2, scales = "free")
-    c = scale_fill_manual(values = c("black", "orangered"))
+    c = scale_fill_manual(values = c("grey40", "lightcoral")) #orangered
     lab = labs(x = "年", y = "", colour = "")
     
     
