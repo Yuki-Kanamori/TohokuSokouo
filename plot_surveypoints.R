@@ -39,7 +39,7 @@ plot_surveypoints = function(dir_input, dir_output, mapdata, pointsdata){
   # col = c("black", "white")
   # c = scale_colour_manual(values = col)
   s = scale_shape_manual(values = c(21, 21))
-  f = scale_fill_manual(values = c("black", "orangered"))
+  f = scale_fill_manual(values = c("grey40", "lightcoral"))
   th = theme(panel.grid.major = element_blank(),
              panel.grid.minor = element_blank(),
              axis.text.x = element_text(size = rel(1.8), colour = "black"),
