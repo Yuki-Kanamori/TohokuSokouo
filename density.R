@@ -2,6 +2,7 @@ require(tidyverse)
 require(openxlsx)
 library(maps)
 library(mapdata)
+require(plyr)
 
 # directory -----------------------------------------------------
 dir_input = "/Users/Yuki/Dropbox/業務/若鷹丸調査結果まとめ_東北底魚研究/2020年度/input"
@@ -20,13 +21,14 @@ colnames(df) = c("year", "syurui", "NS", "station", "group", "depth", "swept_are
 
 data = df
 
+
 get_dens = function(data){
-  df2 = data %>% filter(station == c("A", "B", "C", "D", "E", "F", "G", "H"))
-  unique(df2$station)
+  # ここのwarningでデータが抜け落ちる
+  # df2 = data %>% filter(station == c("A", "B", "C", "D", "E", "F", "G", "H"))
+  # unique(df2$station)
   
-  df2 = df2 %>% dplyr::mutate(d = number/swept_area)
+  df2$d = data$number/data$swept_area
   densN = df2 %>% group_by(year, NS, station, depth, n_sp) %>% summarize(D = mean(d)/1000) %>% filter(n_sp < 16)
-  
   j_sp = c(
     "スケトウダラ０＋",
     "スケトウダラ１＋",
@@ -45,16 +47,26 @@ get_dens = function(data){
     "ババガレイ")
   splist = data.frame(n_sp = 1:15, species = j_sp)
   densN = left_join(densN, splist, by = "n_sp")
+  
+  n_st = data.frame(station = c("A", "B", "C", "D", "E", "F", "G", "H"), n_station = rep(1:8), lat = c(41, 40.3, 39.7, 39, 38.4, 37.7, 36.9, 36.5))
+  densN = left_join(densN, n_st, by = "station")
+  densN = densN %>% mutate(lon = 142+0.5*depth)
+  densN = densN %>% na.omit()
+  unique(densN$station)
+  densN$station = factor(densN$station, levels = c("A", "B", "C", "D", "E", "F", "G", "H"))
 }
 
+
+
+
 map_dens = function(data){
-  n_st = data.frame(station = c("A", "B", "C", "D", "E", "F", "G", "H"), n_station = rep(1:length(unique(df2$station))))
+  n_st = data.frame(station = c("A", "B", "C", "D", "E", "F", "G", "H"), n_station = rep(1:length(unique(df2$station))), lat = c(41, 40.3, 39.7, 39, 38.4, 37.7, 36.9, 36.5))
   densN = left_join(densN, n_st, by = "station")
-  densN = densN %>% mutate(lat = (41-((41-36.5)/7)*(n_station-1)), lon = 142+0.5*depth)
+  densN = densN %>% mutate(lon = 142+0.5*depth)
   densN$station = factor(densN$station, levels = c("A", "B", "C", "D", "E", "F", "G", "H"))
   
   
-  g = ggplot(data = densN %>% filter(year > 2000, n_sp == 2), aes(x = depth, y = n_station, fill = log(D)))
+  g = ggplot(data = densN %>% filter(year > 2000, n_sp == 2), aes(x = depth, y = n_station, fill = D))
   t = geom_tile()
   c = scale_fill_gradientn(colours = c("black", "blue", "cyan", "green", "yellow", "orange", "red", "darkred"))
   f = facet_wrap(~ year, ncol = 7)
