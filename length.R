@@ -81,7 +81,8 @@ plot_length = function(data){
     g = ggplot(data3, aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
     b = geom_bar(position="dodge", stat = "identity", width = 1)
     f = facet_wrap(~ year, ncol = 6)
-    c = scale_fill_manual(values = c("black", "orangered"))
+    # c = scale_fill_manual(values = c("black", "orangered"))
+    c = scale_fill_manual(values = c("grey40", "lightcoral"))
     lab = labs(x = "体長（cm）", y = "尾数 (百万尾)", colour = "エリア")
     
     th = theme(panel.grid.major = element_blank(),
@@ -96,7 +97,7 @@ plot_length = function(data){
                #legend.position = c(0.75, 0.05),
                legend.background = element_rect(fill = "white", size = 0.4, linetype = "solid", colour = "black"))
     
-    fig = g+b+f+c+lab+theme_bw(base_family = "HiraKakuPro-W3")+th+scale_x_continuous(expand = c(0, 0), breaks = seq(0, as.numeric(max(data3$size_cate)), by = 10))
+    fig = g+b+f+c+lab+theme_bw(base_family = "HiraKakuPro-W3")+th+scale_x_continuous(expand = c(0, 0), breaks = seq(0, max(as.numeric(data3$size_cate)), by = 10))
     
     ggsave(file = paste0(dir_output, "/", sp[i], "length.png"), plot = fig, units = "in", width = 11.69, height = 8.27)
     
