@@ -46,6 +46,7 @@ plot_length = function(data){
   
   for(i in 1:length(sp)){
     # data2 = data %>% dplyr::filter(sp == sp[i]) #なぜかうまく引っ掛からない
+    i = 14
     data2 = data[str_detect(data$sp, sp[i]), ]
     check = data2 %>% group_by(year) %>% summarize(sum = sum(B)) %>% filter(sum == 0)
     remove = check$year
@@ -57,9 +58,17 @@ plot_length = function(data){
     summary(data2)
     
     if(nrow(check) > 0){
-      data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(year != remove, size_cate < min(remove2))
+      if(nrow(check2) > 0){
+        data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(year != remove, size_cate < min(remove2))
+      }else{
+        data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(year != remove) 
+      }
     }else{
-      data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(nsize < min(remove2))
+      if(nrow(check2) > 0){
+        data3 = data2 %>% mutate(nsize = as.numeric(size_cate)) %>% filter(nsize < min(remove2))
+      }else{
+        data3 = data2
+      }
     }
     
     g = ggplot(data3, aes(x = nsize, y = B/1000, fill = NS))
