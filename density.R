@@ -18,14 +18,14 @@ for(i in 1995:2018){
 summary(df)
 colnames(df) = c("year", "syurui", "NS", "station", "group", "depth", "swept_area", "n_sp", "weight", "number")
 
-
+data = df
 
 get_dens = function(data){
   df2 = data %>% filter(station == c("A", "B", "C", "D", "E", "F", "G", "H"))
   unique(df2$station)
   
   df2 = df2 %>% dplyr::mutate(d = number/swept_area)
-  densN = df2 %>% group_by(year, NS, station, depth, n_sp) %>% summarize(D = mean(d)) %>% filter(n_sp < 16)
+  densN = df2 %>% group_by(year, NS, station, depth, n_sp) %>% summarize(D = mean(d)/1000) %>% filter(n_sp < 16)
   
   j_sp = c(
     "スケトウダラ０＋",
