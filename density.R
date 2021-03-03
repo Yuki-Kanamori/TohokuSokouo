@@ -11,24 +11,35 @@ dir_output = "/Users/Yuki/Dropbox/業務/若鷹丸調査結果まとめ_東北�
 
 
 # data ----------------------------------------------------------
-df = NULL
+old = NULL
 for(i in 1995:2018){
-  old = read.xlsx(paste0(dir_input, "/4_分布密度データ01-18.xlsx"), sheet = i-1994)
-  df = rbind(df, old)
+  temp = read.xlsx(paste0(dir_input, "/4_分布密度データ01-18.xlsx"), sheet = i-1994)
+  old = rbind(old, temp)
 }
-summary(df)
-colnames(df) = c("year", "syurui", "NS", "station", "group", "depth", "swept_area", "n_sp", "weight", "number")
+summary(old)
+colnames(old) = c("year", "syurui", "NS", "station", "group", "depth", "swept_area", "n_sp", "weight", "number")
 
-data = df
+y19 = read.xlsx(paste0(dir_input, "/q_魚種別各層別集計クエリ2019.xlsx"))
+y20 = read.xlsx(paste0(dir_input, "/q_魚種別各層別集計クエリ2020.xlsx"))
+y19$year = 2019
+y20$year = 2020
+new = rbind(y19, y20)
+colnames(new)
+colnames(new) = c("syurui", "NS", "station", "group", "depth", "swept_area", "n_sp", "weight", "number", "year")
+
+data = all = rbind(old, new)
+summary(all)
 
 
+# function ----------------------------------------------------------------
 get_dens = function(data){
   # ここのwarningでデータが抜け落ちる
   # df2 = data %>% filter(station == c("A", "B", "C", "D", "E", "F", "G", "H"))
   # unique(df2$station)
   
-  df2$d = data$number/data$swept_area
-  densN = df2 %>% group_by(year, NS, station, depth, n_sp) %>% summarize(D = mean(d)/1000) %>% filter(n_sp < 16)
+  df2 = data %>% mutate(d = number/swept_area)
+  densN = df2 %>% dplyr::group_by(year, NS, station, depth, n_sp) %>% dplyr::summarize(D = mean(d)/1000)
+  densN = densN %>% filter(n_sp < 16)
   j_sp = c(
     "スケトウダラ０＋",
     "スケトウダラ１＋",
@@ -60,10 +71,10 @@ get_dens = function(data){
 
 
 map_dens = function(data){
-  n_st = data.frame(station = c("A", "B", "C", "D", "E", "F", "G", "H"), n_station = rep(1:length(unique(df2$station))), lat = c(41, 40.3, 39.7, 39, 38.4, 37.7, 36.9, 36.5))
-  densN = left_join(densN, n_st, by = "station")
-  densN = densN %>% mutate(lon = 142+0.5*depth)
-  densN$station = factor(densN$station, levels = c("A", "B", "C", "D", "E", "F", "G", "H"))
+  # n_st = data.frame(station = c("A", "B", "C", "D", "E", "F", "G", "H"), n_station = rep(1:length(unique(df2$station))), lat = c(41, 40.3, 39.7, 39, 38.4, 37.7, 36.9, 36.5))
+  # densN = left_join(densN, n_st, by = "station")
+  # densN = densN %>% mutate(lon = 142+0.5*depth)
+  # densN$station = factor(densN$station, levels = c("A", "B", "C", "D", "E", "F", "G", "H"))
   
   
   g = ggplot(data = densN %>% filter(year > 2000, n_sp == 2), aes(x = depth, y = n_station, fill = D))
@@ -128,6 +139,9 @@ map_dens = function(data){
 
 
 
+
+# run ---------------------------------------------------------------------
+dens = get_dens(data = all)
 
 
 
