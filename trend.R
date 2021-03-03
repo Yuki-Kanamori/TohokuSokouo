@@ -78,3 +78,20 @@ plot_trend(data = all)
 # check values in each species ----------------------------------
 suke0 = all %>% filter(sp == "スケトウダラ０＋") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
 suke1 = all %>% filter(sp == "スケトウダラ１＋") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
+mada0 = all %>% filter(sp == "マダラ０＋") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+mada1 = all %>% filter(sp == "マダラ１＋") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+mada2 = all %>% filter(sp == "マダラ２＋") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
+ito = all %>% filter(sp == "イトヒキダラ") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
+kiti = all %>% filter(sp == "キチジ") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
+zuwaf = all %>% filter(sp == "ズワイガニ雌") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+zuwam = all %>% filter(sp == "ズワイガニ雄") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
+aka = all %>% filter(sp == "アカガレイ") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
+same = all %>% filter(sp == "サメガレイ") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
+baba = all %>% filter(sp == "ババガレイ") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
