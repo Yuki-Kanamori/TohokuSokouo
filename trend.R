@@ -72,3 +72,9 @@ plot_trend = function(data){
 # run ---------------------------------------------------------------------
 plot_trend(data = all)
 
+
+
+
+# check values in each species ----------------------------------
+suke0 = all %>% filter(sp == "スケトウダラ０＋") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+suke1 = all %>% filter(sp == "スケトウダラ１＋") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
