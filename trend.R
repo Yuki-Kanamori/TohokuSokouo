@@ -27,6 +27,7 @@ ns = data.frame(NS = c("N", "S"), 南北 = c("北部", "南部"))
 all = left_join(all, ns, by = "NS") %>% select(-NS) %>% dplyr::rename(NS = 南北)
 all$NS = factor(all$NS, levels = c("北部", "南部"))
 all = all %>% mutate(data = ifelse(all$data == "資源重量", "重量", "尾数"))
+unique(all$sp)
 
 
 # function ------------------------------------------------------
