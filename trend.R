@@ -102,3 +102,4 @@ aka = all %>% filter(sp == "アカガレイ") %>% group_by(year, data, sp) %>% s
 same = all %>% filter(sp == "サメガレイ") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
 
 baba = all %>% filter(sp == "ババガレイ") %>% group_by(year, data, sp) %>% summarize(sum = sum(sum))
+
