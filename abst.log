@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2018.5.16)  4 MAR 2021 11:17
+This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2018.5.16)  4 MAR 2021 11:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -258,6 +258,16 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 21.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 21.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -276,12 +286,12 @@ Overfull \hbox (68.57112pt too wide) in paragraph at lines 56--57
 
 [2] (./abst.aux) ) 
 Here is how much of TeX's memory you used:
- 1995 strings out of 493270
- 27370 string characters out of 6145018
+ 2001 strings out of 493270
+ 27465 string characters out of 6145018
  103520 words of memory out of 5000000
- 5913 multiletter control sequences out of 15000+600000
- 10149 words of font info for 44 fonts, out of 8000000 for 9000
+ 5919 multiletter control sequences out of 15000+600000
+ 10955 words of font info for 47 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  25i,5n,21p,1115b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on abst.dvi (2 pages, 7412 bytes).
+Output written on abst.dvi (2 pages, 7464 bytes).
