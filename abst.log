@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2018.5.16)  3 MAR 2021 12:35
+This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2018.5.16)  4 MAR 2021 11:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -266,14 +266,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 31.
 [1
 
-] [2] (./abst.aux) ) 
+]
+File: trendabst.png Graphic file (type bmp)
+<trendabst.png>
+
+Overfull \hbox (68.57112pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
+[2] (./abst.aux) ) 
 Here is how much of TeX's memory you used:
- 1988 strings out of 493270
- 27259 string characters out of 6145018
+ 1995 strings out of 493270
+ 27370 string characters out of 6145018
  103520 words of memory out of 5000000
- 5910 multiletter control sequences out of 15000+600000
+ 5913 multiletter control sequences out of 15000+600000
  10149 words of font info for 44 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,5n,21p,1115b,174s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,5n,21p,1115b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on abst.dvi (2 pages, 6992 bytes).
+Output written on abst.dvi (2 pages, 7412 bytes).
