@@ -12,9 +12,15 @@ dir_output = "/Users/Yuki/Dropbox/業務/若鷹丸調査結果まとめ_東北�
 old = NULL
 for(i in 1:(2018-1995+1)){
   temp = read.xlsx(paste0(dir_input, "/1_1995～2018資源尾数、重量グラフ.xlsx"), sheet = i, startRow = 1)
-  temp = temp[, 1:8]
-  temp = temp %>% na.omit() %>% filter(南北 != "南北計")
   
+  if(i < 12){
+    temp = temp[, c(1:5, 7:9)]
+    temp = temp %>% na.omit() %>% filter(南北 != "南北計")
+  }else{
+    temp = temp[, 1:8]
+    temp = temp %>% na.omit() %>% filter(南北 != "南北計")
+  }
+
   old = rbind(old, temp)
 }
 
