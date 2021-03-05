@@ -40,3 +40,22 @@
 <img src="output/マダラ１＋trend.png" width="80%">
 
 ### 2020年は南北合計で1,000トン (500万尾)．     [2019年は2,600トン (1万尾)]
+
+<img src="output/マダラ１＋dens.png" width="80%">
+
+### 空間分布のパターンは変わらず
+
+<img src="output/マダラ1+length.png" width="80%">
+
+### 南北で体長組成に違いはなさそう
+
+
+
+
+
+
+
+
+
+
+
