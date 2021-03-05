@@ -15,7 +15,7 @@
 
 ### - 対象種: ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，アメガレイ，ババガレイ
 ### - 項目: 面積密度法で推定した重量・尾数（密度）・体長組成の経年変化
-
+***
 
 
 
@@ -26,7 +26,7 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ０＋trend.png" width="80%">
 
 ### ・2020年は南北合計で1.7トン (17万尾)．     [2019年は2,000トン (1億尾)]
-
+***
 
 
 
@@ -44,7 +44,7 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ1+length.png" width="100%">
 
 ### ・20cm台の中型個体が増加
-
+***
 
 
 
@@ -56,7 +56,7 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ０＋trend.png" width="80%">
 
 ### ・2020年は南北合計で1.7トン (14万尾)．     [2019年は180トン (1万尾)]
-
+***
 
 
 
@@ -74,7 +74,7 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ1+length.png" width="80%">
 
 ### ・南北で体長組成に違いはなさそう
-
+***
 
 
 
@@ -94,7 +94,7 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ2+length.png" width="80%">
 
 ### ・南北で体長組成に違いはなさそう
-
+***
 
 
 
@@ -115,7 +115,7 @@
 
 ### ・北部では35cm以上の中〜大型個体
 ### ・南部では北部と同じくらいの中〜大型個体と30cm以下の小型個体
-
+***
 
 
 
@@ -135,7 +135,7 @@
 
 ### ・北部と南部では20cm前後にピーク
 ### ・10cm以下の小型個体の山は不明瞭
-
+***
 
 
 
@@ -154,7 +154,7 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雌length.png" width="80%">
 
 ### ・甲幅サイズのピークは不明瞭だが，南北で甲幅サイズが異なる傾向は見られない
-
+***
 
 
 
@@ -174,7 +174,7 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雄length.png" width="80%">
 
 ### ・甲幅サイズのピークは不明瞭だが，南北で甲幅サイズが異なる傾向は見られない  
-
+***
 
 
 
@@ -195,7 +195,7 @@
 
 ### ・北部では30-40cm以上の大型個体
 ### ・南部では20-25cmの中型個体
-
+***
 
 
 
@@ -215,7 +215,7 @@
 
 ### ・北部ではピークが不明瞭
 ### ・南部では30cm前後の中型個体
-
+***
 
 
 
@@ -234,6 +234,11 @@
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ババガレイlength.png" width="80%">
 
 ### ・南北で体サイズが類似しているが，ピークは不明瞭
+***
+
+
+
+
 
 
 
