@@ -11,7 +11,7 @@
 ### - 日時: 2020年10月1日〜11月13日
 ### - 場所: 計107地点
 [](![survey_points](results/figures/fig1.png))
-<img src="output/fig1.png" width="50%">
+<img src="TohokuSokouo/results/figures/fig1.png" width="50%">
 
 ### - 対象種: ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，アメガレイ，ババガレイ
 ### - 項目: 面積密度法で推定した重量・尾数（密度）・体長組成の経年変化
