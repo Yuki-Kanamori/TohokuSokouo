@@ -108,7 +108,7 @@
 
 <img src="output/ズワイガニ雌dens.png" width="80%">
 
-### ・北部で密度が高くなる傾向？
+### ・密度は北部で高くなる傾向？
 
 <img src="output/ズワイガニ雌length.png" width="80%">
 
@@ -118,7 +118,18 @@
 
 
 
+# ズワイガニ雄
+<img src="output/ズワイガニ雄trend.png" width="80%">
 
+### ・2020年は南北合計で130トン (140万尾)．     [2019年は320トン (200万尾)]
+
+<img src="output/ズワイガニ雄dens.png" width="80%">
+
+### ・密度は北部で高くなる傾向？
+
+<img src="output/ズワイガニ雄length.png" width="80%">
+
+### ・甲幅サイズのピークは不明瞭だが，南北で甲幅サイズが異なる傾向は見られない
 
 
 
