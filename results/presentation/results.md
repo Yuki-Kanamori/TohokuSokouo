@@ -13,8 +13,13 @@
 [](![survey_points](results/figures/fig1.png))
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/fig1.png" width="50%">
 
+
+
+
+
+# 報告内容
+### 面積密度法で推定した重量・尾数（密度）・体長組成の経年変化
 ### - 対象種: ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，ババガレイ
-### - 項目: 面積密度法で推定した重量・尾数（密度）・体長組成の経年変化
 ***
 
 
