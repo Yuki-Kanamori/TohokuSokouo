@@ -1,27 +1,12 @@
-# 2020年底魚類現存量調査結果
-### 金森由妃・成松庸二・鈴木勇人・森川英祐・時岡　駿・三澤　遼・永尾次郎（水産機構資源研）  
-  
-  
-# 調査の概要
-### - 日時: 2020年10月1日〜11月13日
-### - 場所: 計107地点
-[](![survey_points](output/fig1.png))
-<img src="output/fig1.png" width="50%">
+## 2020年度　底魚類現存量調査
+***
 
-### - 対象種: ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，アメガレイ，ババガレイ
-### - 項目: 面積密度法で推定した重量・尾数（密度）・体調組成の経年変化
+#### ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，ババガレイ，キアンコウ，スルメイカ，ベニズワイガニについて，面積密度法で推定した重量・尾数（密度）・体長組成の経年変化をまとめた
+- 概要は[results/presentation/results.md](https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/presentation/results.md)  ただしこちらには東北底魚で発表に必要なソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，ババガレイのみ掲載
+- 全ての図は[results/figures](https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures)
+- データの処理と作図コードは[R](https://github.com/Yuki-Kanamori/TohokuSokouo/tree/master/R)
 
-# スケトウダラ0歳
-<img src="output/スケトウダラ０＋trend.png" width="100%">
-
-### 2020年は南北合計で1.7トン (17万尾)．[2019年は2,000トン (1億尾)]
-
-# スケトウダラ1歳
-<img src="output/スケトウダラ１＋trend.png" width="100%">  
-
-### 2020年は南北合計で11,200トン (5,800万尾)．[2019年は5,100トン (1,400尾)]
-<img src="output/スケトウダラ１＋dens.png" width="100%">
-
-<img src="output/スケトウダラ1+length.png" width="100%">
-
-### 20cm台の中型個体が増加
+#### 令和2年度東北ブロック底魚研究連絡会議（2021年3月10-11日）
+- 発表資料は[results/presentation/results.md](https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/presentation/results.md)
+- 要旨は[abstract/abst.pdf](https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/abstract/abst.pdf)
+- 原稿は[draft/draft.pdf]()    準備中
