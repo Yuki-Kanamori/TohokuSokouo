@@ -17,7 +17,7 @@ pointsdata = read.xlsx(paste0(dir_input, "/in_操業記録データ.xlsx"), shee
 pointsdata = pointsdata[, c(1, 16:20)]
 colnames(pointsdata) = c("station", "lat1", "lat2", "lon1", "lon2", "memo")
 pointsdata = pointsdata %>% mutate(lat = lat1+lat2/60, lon = lon1+lon2/60, station2 = ifelse(is.na(as.numeric(str_sub(memo, 2, 3))), str_sub(memo, 1, 2), str_sub(memo, 1, 1))) %>% select(station, lon, lat, station2)
-pointsdata = pointsdata %>% filter(str_length(station2) == 1)
+# pointsdata = pointsdata %>% filter(str_length(station2) == 1)
 unique(pointsdata$station)
 
 

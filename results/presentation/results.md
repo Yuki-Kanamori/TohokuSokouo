@@ -41,7 +41,7 @@
 # スケトウダラ1歳以上
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ１＋trend.png" width="80%">  
 
-### ・2020年は南北合計で11,200トン (5,800万尾)．     [2019年は5,100トン (1,400尾)]
+### ・2020年は南北合計で11,200トン (5,800万尾)．     [2019年は5,100トン (1,400万尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ１＋dens.png" width="100%">
 
