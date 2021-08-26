@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2018.5.16)  26 AUG 2021 10:46
+This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2018.5.16)  26 AUG 2021 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -375,17 +375,17 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
  [2] [3] [4]
 
 LaTeX Font Warning: Font shape `JT2/mc/m/it' undefined
-(Font)              using `JT2/mc/m/n' instead on input line 194.
+(Font)              using `JT2/mc/m/n' instead on input line 195.
 
 
 LaTeX Font Warning: Font shape `JY2/mc/m/it' undefined
-(Font)              using `JY2/mc/m/n' instead on input line 194.
+(Font)              using `JY2/mc/m/n' instead on input line 195.
 
 [5]
 LaTeX Font Info:    Font shape `JT2/mc/m/it' will be
-(Font)              scaled to size 10.53629pt on input line 216.
+(Font)              scaled to size 10.53629pt on input line 217.
 LaTeX Font Info:    Font shape `JY2/mc/m/it' will be
-(Font)              scaled to size 10.53629pt on input line 216.
+(Font)              scaled to size 10.53629pt on input line 217.
 File: fig1.png Graphic file (type bmp)
 <fig1.png>
 
@@ -587,4 +587,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  27i,5n,21p,933b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on draft.dvi (25 pages, 66652 bytes).
+Output written on draft.dvi (25 pages, 65476 bytes).
