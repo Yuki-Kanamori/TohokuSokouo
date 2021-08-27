@@ -49,27 +49,62 @@ all$NS = factor(all$NS, levels = c("北部", "南部"))
 all = all %>% mutate(data = ifelse(all$data == "資源重量", "重量", "尾数"))
 unique(all$sp)
 sp_list = unique(all$sp)
-levels(sp_list)
-sp_list = factor(sp_list, levels = c())
+# levels(sp_list)
+# sp_list = factor(sp_list, levels = c("スケトウダラ０＋", "スケトウダラ１＋", "マダラ０＋", "マダラ１＋", "マダラ２＋", "イトヒキダラ",  "キチジ", "ズワイガニ雌", "ズワイガニ雄", "スルメイカ", "ベニズワイ雌", "ベニズワイ雄", "アカガレイ", "サメガレイ", "ババガレイ",  "キアンコウ"))
 
-biomass = all %>% filter(data == "重量") %>% dplyr::group_by(year, sp) %>% dplyr::summarize(total = sum(sum))
-numbers = all %>% filter(data == "尾数") %>% dplyr::group_by(year, sp) %>% dplyr::summarize(total = sum(sum))
+biomass = all %>% filter(data == "重量") %>% dplyr::group_by(year, sp) %>% dplyr::summarize(トン = sum(sum)/1000) %>% dplyr::rename(年 = year, 魚種 = sp)
+numbers = all %>% filter(data == "尾数") %>% dplyr::group_by(year, sp) %>% dplyr::summarize(千尾 = sum(sum)/1000) %>% dplyr::rename(年 = year, 魚種 = sp)
 
 for(i in 1:length(sp_list)){
-  assign(paste(mass, ))
+  assign(paste("mass", i, sep = ""),
+         biomass %>% filter(魚種 == sp_list[i])
+         )
+}
+
+for(i in 1:length(sp_list)){
+  assign(paste("n", i, sep = ""),
+         numbers %>% filter(魚種 == sp_list[i])
+         )
 }
   
 ```
 
-#### 現存量
-```{r biomass}
-for(i in 1:length(sp_list)){
-  biomass = all %>% filter(data == "重量", sp == sp_list[i]) %>% dplyr::group_by(year, sp) %>% dplyr::summarize(total = sum(sum))
-  biomass
-}
+### 現存量
+```{r biomass, echo=F}
+mass1
+mass2
+mass3
+mass4
+mass11
+mass5
+mass6
+mass12
+mass13
+mass7
+mass14
+mass15
+mass8
+mass9
+mass10
+mass16
 ```
 
-#### 現存尾数
-```{r numbers}
-all %>% filter(data == "尾数") %>% dplyr::group_by(year, sp) %>% dplyr::summarize(total = sum(sum))
+### 現存尾数
+```{r numbers, echo=F}
+n1
+n2
+n3
+n4
+n11
+n5
+n6
+n12
+n13
+n7
+n14
+n15
+n8
+n9
+n10
+n16
 ```
