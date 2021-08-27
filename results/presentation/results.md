@@ -8,7 +8,7 @@
 
 
 # 調査の概要
-### - 日時: 2020年10月1日〜11月13日
+### - 日時: 2020年10月1日〜11月24日
 ### - 場所: 計153地点
 [](![survey_points](results/figures/fig1.png))
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/fig1.png" width="50%">
