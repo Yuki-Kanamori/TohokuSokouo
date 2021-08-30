@@ -1,5 +1,5 @@
 # 2020年底魚類現存量調査結果
-### 金森由妃・成松庸二・鈴木勇人・森川英祐・時岡　駿・三澤　遼・永尾次郎（水産機構資源研）  
+### 金森由妃・成松庸二・冨樫博幸・鈴木勇人・森川英祐・時岡　駿・三澤　遼・永尾次郎・櫻井慎大（水産機構資源研）  
   
   
 
@@ -20,7 +20,8 @@
 
 # 報告内容
 ### 面積密度法で推定した重量・尾数（密度）・体長組成の経年変化
-### - 対象種: ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，ババガレイ
+### - 対象種: ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，ババガレイ，スルメイカ，ベニズワイガニ，キアンコウ
+### - 現存量と現存尾数の数値は，こちら（）を参照
 ***
 
 
@@ -34,7 +35,9 @@
 ### ・2020年は南北合計で1.7トン (17万尾)．     [2019年は2,000トン (1億尾)]
 ***
 
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ０＋dens.png" width="100%">
 
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ０+length.png" width="100%">
 
 
 
@@ -64,8 +67,10 @@
 ### ・2020年は南北合計で1.7トン (14万尾)．     [2019年は180トン (1万尾)]
 ***
 
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ０＋dens.png" width="80%">
 
 
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ０+length.png" width="80%">
 
 
 # マダラ1歳
@@ -244,10 +249,55 @@
 
 
 
+# スルメイカ
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スルメイカtrend.png" width="80%">
+
+
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スルメイカdens.png" width="80%">
+
+
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スルメイカlength.png" width="80%">
+
+***
+
+
+# ベニズワイガニ雌
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雌trend.png" width="80%">
+
+
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雌dens.png" width="80%">
+
+
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雌length.png" width="80%">
+
+
+***
+
+
+
+# ベニズワイガニ雄
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雄trend.png" width="80%">
+
+
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雄dens.png" width="80%">
+
+
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雄length.png" width="80%">
+
+
+***
 
 
 
 
+# キアンコウ
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/キアンコウtrend.png" width="80%">
+
+***
+
+
+
+[](
 # まとめ
 | 魚種 | 現存量（2019年度比） | 特徴 |
 |:---|:---|:---|
@@ -263,5 +313,5 @@
 |アカガレイ|北→ / 南↓ |低水準が続いている|
 |サメガレイ|北→ / 南↓ |南部では30cm前後の中型個体|
 |ババガレイ |北→ / 南↓ |南北で体サイズが類似する傾向 |
-
+)
 
