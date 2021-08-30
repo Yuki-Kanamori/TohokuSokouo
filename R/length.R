@@ -10,9 +10,11 @@ dir_output = "/Users/Yuki/Dropbox/業務/若鷹丸調査結果まとめ_東北�
 
 
 # data ----------------------------------------------------------
+# -2019まで
 old = NULL
 for(i in 5:19){
   temp = read.xlsx(paste0(dir_input, "/魚種別体長別資源量.xlsx"), sheet = i, startRow = 1)
+  
   temp2 = temp %>% gather(key = size_cate, value = B, 4:ncol(temp))
   old = rbind(old, temp2)
 }
@@ -21,17 +23,30 @@ latest = read.xlsx(paste0(dir_input, "/q_魚種別体長別資源量2020.xlsx"),
 latest$和名;
 sp = unique(old$和名)
 
+# 2020-
 new = NULL
 for(i in 1:length(sp)){
   temp = latest[str_detect(latest$和名, sp[i]), ]
+  
   l = old %>% filter(和名 == sp[i]) %>% select(size_cate) %>% mutate(nsize = as.numeric(size_cate)) 
   l = max(l$nsize)
-  
+    
   temp2 = data.frame(年 = as.numeric(str_sub(temp$調査種類名称, 1, 4)), 和名 = paste0(sp[i]), 南北 = c("北部", "南部"), l = temp[, 16:(16+l)])
-  temp2 = temp2 %>% gather(key = size_cate, value = B, 4:(ncol(temp2))) %>% mutate(size_cate = str_sub(size_cate, 5, 6), B = B/1000)
+  temp2 = temp2 %>% gather(key = size_cate, value = B, 4:(ncol(temp2))) %>% mutate(size_cate = as.numeric(str_sub(size_cate, 5, 6)), B = B/1000)
+  
+  if(str_detect(temp2$和名, "ズワイ")){
+    temp2 = temp2 %>% mutate(size_cate2 = as.numeric(size_cate)/2) %>% select(-size_cate) %>% dplyr::rename(size_cate = size_cate2)
+  }
+    
   new = rbind(new, temp2)
 }
 summary(new)
+
+# i = 14
+# temp = latest[str_detect(latest$和名, sp[i]), ]
+# l = old %>% filter(和名 == sp[i]) %>% select(size_cate) %>% mutate(nsize = as.numeric(size_cate))
+
+
 
 colnames(old); colnames(new)
 all = rbind(old, new) %>% dplyr::rename(year = 年, sp = 和名, NS = 南北)
@@ -77,7 +92,7 @@ plot_length = function(data, n_year){
     if(str_detect(data3$sp, "ズワイ")){
       # all year
       g = ggplot(data3, aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
-      b = geom_bar(position="dodge", stat = "identity", width = 0.8, size = 0.5)
+      b = geom_bar(position="dodge", stat = "identity", width = 0.3, size = 0.3)
       f = facet_wrap(~ year, ncol = 6)
       # c = scale_fill_manual(values = c("black", "orangered"))
       c = scale_fill_manual(values = c("grey40", "lightcoral"))
@@ -99,7 +114,7 @@ plot_length = function(data, n_year){
       
       # the latest year
       g = ggplot(data3 %>% filter(year == n_year), aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
-      b = geom_bar(position="dodge", stat = "identity", width = 1)
+      b = geom_bar(position="dodge", stat = "identity", width = 0.3, size = 0.3)
       f = facet_wrap(~ year, ncol = 1)
       # c = scale_fill_manual(values = c("black", "orangered"))
       c = scale_fill_manual(values = c("grey40", "lightcoral"))
@@ -145,7 +160,7 @@ plot_length = function(data, n_year){
       
       # the latest year
       g = ggplot(data3 %>% filter(year == n_year), aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
-      b = geom_bar(position="dodge", stat = "identity", width = 1)
+      b = geom_bar(position="dodge", stat = "identity", width = 0.8, size = 0.5)
       f = facet_wrap(~ year, ncol = 1)
       # c = scale_fill_manual(values = c("black", "orangered"))
       c = scale_fill_manual(values = c("grey40", "lightcoral"))
