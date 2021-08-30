@@ -19,9 +19,8 @@
 
 
 # 報告内容
-### 面積密度法で推定した重量・尾数（密度）・体長組成の経年変化
+### 面積密度法で推定した現存量，現存尾数，密度，および体長組成の経年変化
 ### - 対象種: ソケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，ババガレイ，スルメイカ，ベニズワイガニ，キアンコウ
-### - 現存量と現存尾数の数値は，こちら（）を参照
 ***
 
 
@@ -32,10 +31,13 @@
 # スケトウダラ0歳
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ０＋trend.png" width="80%">
 
-### ・2020年は南北合計で1.7トン (17万尾)．     [2019年は2,000トン (1億尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で1.713トン (165158尾)．     [2019年は1975.479トン (104535988尾)]
 ***
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ０＋dens.png" width="100%">
+
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ0+length.png" width="100%">
 
@@ -44,15 +46,15 @@
 # スケトウダラ1歳以上
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ１＋trend.png" width="80%">  
 
-### ・2020年は南北合計で11,200トン (5,800万尾)．     [2019年は5,100トン (1,400万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で11223.938トン (58150676尾)．     [2019年は5149.008トン (14055950尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ１＋dens.png" width="100%">
 
-### ・密度は北部で高い傾向
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ1+length.png" width="100%">
 
-### ・20cm台の中型個体が増加
 ***
 
 
@@ -64,27 +66,33 @@
 # マダラ0歳
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ０＋trend.png" width="80%">
 
-### ・2020年は南北合計で1.7トン (14万尾)．     [2019年は180トン (1万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で1.687トン (135359万尾)．     [2019年は182.983トン (10566713尾)]
 ***
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ０＋dens.png" width="80%">
 
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ０+length.png" width="80%">
+
+
+
 
 
 # マダラ1歳
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ１＋trend.png" width="80%">
 
-### ・2020年は南北合計で1,000トン (500万尾)．     [2019年は2,600トン (1万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で1035.5980トン (5024937尾)．     [2019年は2630.4290トン (10241434尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ１＋dens.png" width="80%">
 
-### ・空間分布のパターンは変わらず
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ1+length.png" width="80%">
 
-### ・南北で体長組成に違いはなさそう
+
 ***
 
 
@@ -96,15 +104,16 @@
 # マダラ2歳以上
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ２＋trend.png" width="80%">
 
-### ・2020年は南北合計で3,100トン (270万尾)．     [2019年は2,000トン (200万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で3052.741トン (2660911尾)．     [2019年は1989.447トン (1862208尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ２＋dens.png" width="80%">
 
-### ・密度は北部で高い傾向
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/マダラ2+length.png" width="80%">
 
-### ・南北で体長組成に違いはなさそう
+
 ***
 
 
@@ -116,16 +125,15 @@
 # イトヒキダラ
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/イトヒキダラtrend.png" width="80%">
 
-### ・2020年は南北合計で7,000トン (1700万尾)．     [2019年は12,000トン (2800万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で6964.347トン (16703326尾)．     [2019年は12110.687トン (27747811尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/イトヒキダラdens.png" width="80%">
 
-### ・南部で密度が高くなる傾向はなかった
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/イトヒキダラlength.png" width="80%">
 
-### ・北部では35cm以上の中〜大型個体
-### ・南部では北部と同じくらいの中〜大型個体と30cm以下の小型個体
 ***
 
 
@@ -136,16 +144,15 @@
 # キチジ
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/キチジtrend.png" width="80%">
 
-### ・2020年は南北合計で9,900トン (6000万尾)．     [2019年は9,900トン (6000万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で9934.173トン (62558574尾)．     [2019年は9928.211トン (61203707尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/キチジdens.png" width="80%">
 
-### ・北部で密度が高くなる傾向
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/キチジlength.png" width="80%">
 
-### ・北部と南部では20cm前後にピーク
-### ・10cm以下の小型個体の山は不明瞭
 ***
 
 
@@ -156,15 +163,15 @@
 # ズワイガニ雌
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雌trend.png" width="80%">
 
-### ・2020年は南北合計で54トン (100万尾)．     [2019年は280トン (250万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で53.642トン (1092721尾)．     [2019年は277.061トン (2528322尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雌dens.png" width="80%">
 
-### ・密度は北部で高くなる傾向？
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雌length.png" width="80%">
 
-### ・甲幅サイズのピークは不明瞭だが，南北で甲幅サイズが異なる傾向は見られない
 ***
 
 
@@ -176,15 +183,15 @@
 # ズワイガニ雄
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雄trend.png" width="80%">
 
-### ・2020年は南北合計で130トン (140万尾)．     [2019年は320トン (200万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で134.544トン (1378778尾)．     [2019年は316.301トン (2111461尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雄dens.png" width="80%">
 
-### ・密度は北部で高くなる傾向？
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ズワイガニ雄length.png" width="80%">
 
-### ・甲幅サイズのピークは不明瞭だが，南北で甲幅サイズが異なる傾向は見られない  
 ***
 
 
@@ -196,16 +203,15 @@
 # アカガレイ
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/アカガレイtrend.png" width="80%">
 
-### ・2020年は南北合計で170トン (40万尾)．     [2019年は250トン (80万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で167.882トン (435683尾)．     [2019年は254.605トン (808078尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/アカガレイdens.png" width="80%">
 
-### ・密度は北部で高くなる傾向？
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/アカガレイlength.png" width="80%">
 
-### ・北部では30-40cm以上の大型個体
-### ・南部では20-25cmの中型個体
 ***
 
 
@@ -216,16 +222,15 @@
 # サメガレイ
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/サメガレイtrend.png" width="80%">
 
-### ・2020年は南北合計で950トン (70万尾)．     [2019年は580トン (50万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で946.158トン (701043尾)．     [2019年は583.636トン (511287尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/サメガレイdens.png" width="80%">
 
-### ・密度は南部で局所的に高くなっていた
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/サメガレイlength.png" width="80%">
 
-### ・北部ではピークが不明瞭
-### ・南部では30cm前後の中型個体
 ***
 
 
@@ -236,15 +241,15 @@
 # ババガレイ
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ババガレイtrend.png" width="80%">
 
-### ・2020年は南北合計で570トン (180万尾)．     [2019年は1,100トン (300万尾)]
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で571.387トン (1842467尾)．     [2019年は1098.221トン (3167548尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ババガレイdens.png" width="80%">
 
-### ・空間分布のパターンは変わらず
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ババガレイlength.png" width="80%">
 
-### ・南北で体サイズが類似しているが，ピークは不明瞭
 ***
 
 
@@ -252,9 +257,12 @@
 # スルメイカ
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スルメイカtrend.png" width="80%">
 
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で4957.291トン (26843912尾)．     [2019年は4101.665トン (28360753尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スルメイカdens.png" width="80%">
 
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スルメイカlength.png" width="80%">
 
@@ -264,9 +272,12 @@
 # ベニズワイガニ雌
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雌trend.png" width="80%">
 
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で29.583トン (617632尾)．     [2019年は223.653トン (1638222尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雌dens.png" width="80%">
 
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雌length.png" width="80%">
 
@@ -278,9 +289,12 @@
 # ベニズワイガニ雄
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雄trend.png" width="80%">
 
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で1556.464トン (3834347尾)．     [2019年は1175.449トン (2767025尾)]
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雄dens.png" width="80%">
 
+### ・分布密度(千尾/km2)の経年変化
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/ベニズワイ雄length.png" width="80%">
 
@@ -293,11 +307,13 @@
 # キアンコウ
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/キアンコウtrend.png" width="80%">
 
+### ・現存量(左; 単位はトン)と現存尾数(右; 単位は千尾)の経年変化
+### ・2020年は南北合計で2276.783トン (846784尾)．     [2019年は1547.762トン (1075918尾)]
 ***
 
 
 
-[](
+<!-- 
 # まとめ
 | 魚種 | 現存量（2019年度比） | 特徴 |
 |:---|:---|:---|
@@ -314,4 +330,4 @@
 |サメガレイ|北→ / 南↓ |南部では30cm前後の中型個体|
 |ババガレイ |北→ / 南↓ |南北で体サイズが類似する傾向 |
 )
-
+-->
