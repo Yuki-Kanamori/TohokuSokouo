@@ -37,7 +37,7 @@
 
 <img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ０＋dens.png" width="100%">
 
-<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ０+length.png" width="100%">
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ0+length.png" width="100%">
 
 
 
