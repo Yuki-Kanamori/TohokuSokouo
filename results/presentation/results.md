@@ -39,7 +39,7 @@
 
 ### ・分布密度(千尾/km2)の経年変化
 
-<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ0+length.png" width="100%">
+<img src="https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/figures/スケトウダラ0%2Blength.png" width="100%">
 
 
 
