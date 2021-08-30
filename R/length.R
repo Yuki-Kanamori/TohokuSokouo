@@ -92,7 +92,7 @@ plot_length = function(data, n_year){
     if(str_detect(data3$sp, "ズワイ")){
       # all year
       g = ggplot(data3, aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
-      b = geom_bar(position="dodge", stat = "identity", width = 0.3, size = 0.3)
+      b = geom_bar(position="dodge", stat = "identity", width = 0.4, size = 0.4)
       f = facet_wrap(~ year, ncol = 6)
       # c = scale_fill_manual(values = c("black", "orangered"))
       c = scale_fill_manual(values = c("grey40", "lightcoral"))
@@ -114,7 +114,7 @@ plot_length = function(data, n_year){
       
       # the latest year
       g = ggplot(data3 %>% filter(year == n_year), aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
-      b = geom_bar(position="dodge", stat = "identity", width = 0.3, size = 0.3)
+      b = geom_bar(position="dodge", stat = "identity", width = 0.4, size = 0.4)
       f = facet_wrap(~ year, ncol = 1)
       # c = scale_fill_manual(values = c("black", "orangered"))
       c = scale_fill_manual(values = c("grey40", "lightcoral"))
@@ -131,7 +131,7 @@ plot_length = function(data, n_year){
                  strip.text.x = element_text(size = rel(1.3)),
                  #legend.position = c(0.75, 0.05),
                  legend.background = element_rect(fill = "white", size = 0.4, linetype = "solid", colour = "black"))
-      fig_last = g+b+f+c+lab+theme_bw(base_family = "HiraKakuPro-W3")+th+scale_x_continuous(expand = c(0, 0), breaks = seq(0, max(as.numeric(data3$size_cate)), by = 2))
+      fig_last = g+b+f+c+lab+theme_bw(base_family = "HiraKakuPro-W3")+th+scale_x_continuous(expand = c(0, 0), breaks = seq(0, max(as.numeric(data3$size_cate)), by = 1))
       
       fig = grid.arrange(fig_all, fig_last, ncol = 1, heights = c(3, 1))
       ggsave(file = paste0(dir_output, "/", sp[i], "length.png"), plot = fig, units = "in", width = 11.69, height = 8.27)
