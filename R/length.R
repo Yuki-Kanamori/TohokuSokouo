@@ -77,7 +77,7 @@ plot_length = function(data, n_year){
     if(str_detect(data3$sp, "ズワイ")){
       # all year
       g = ggplot(data3, aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
-      b = geom_bar(position="dodge", stat = "identity", width = 1)
+      b = geom_bar(position="dodge", stat = "identity", width = 0.8, size = 0.5)
       f = facet_wrap(~ year, ncol = 6)
       # c = scale_fill_manual(values = c("black", "orangered"))
       c = scale_fill_manual(values = c("grey40", "lightcoral"))
@@ -123,7 +123,7 @@ plot_length = function(data, n_year){
     }else{
       # all year
       g = ggplot(data3, aes(x = as.numeric(size_cate), y = B/1000, fill = NS))
-      b = geom_bar(position="dodge", stat = "identity", width = 1)
+      b = geom_bar(position="dodge", stat = "identity", width = 0.8, size = 0.5)
       f = facet_wrap(~ year, ncol = 6)
       # c = scale_fill_manual(values = c("black", "orangered"))
       c = scale_fill_manual(values = c("grey40", "lightcoral"))

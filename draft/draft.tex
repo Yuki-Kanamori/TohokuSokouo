@@ -13,7 +13,7 @@
 \usepackage{ulem}
 \usepackage{amsmath}
 \renewcommand{\figurename}{図}
-\renewcommand{\tablename}{Table}
+\renewcommand{\tablename}{表}
 
 \makeatletter
 \def\mojiparline#1{
@@ -39,8 +39,8 @@
 
 \mojiparline{40} %X:一行あたり文字数の指定
 \linesparpage{50} %Y:1ページあたり行数の指定
-
-\begin{linenumbers}
+\pagestyle{empty}
+%\begin{linenumbers}
 \flushleft{\textbf{\LARGE{2020年底魚類現存量調査結果}}}\\
 \begin{flushright}
 金森由妃$^{\ast}$, 成松庸二, 冨樫博幸, 鈴木勇人, 森川英祐, 時岡 駿, 三澤 遼, 永尾次郎,  櫻井慎大\\（水産資源研究所）　\\
@@ -69,7 +69,9 @@
 漁獲尾数と曳網面積から，各調査点における分布密度を魚種別に推定した．なお， DE，EF，FG，GH，およびHIラインはそれぞれE，F，G，およびHラインに統合した．A-Dラインを北部海域，E-Hラインを南部海域とし，面積－密度法を用いて南北海域別に現存量と現存尾数を推定した．また体長組成は，現存尾数で引き延ばして算出した．これらの推定値を過去の結果と比較した．なお全魚種において，採集効率は1と仮定した．
 
 \ \ \ \ \ \ \ \ \ \ 
-以下では主要8魚種（スケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，およびババガレイ）の結果のみ報告するが，スルメイカ，ベニズワイガニ，およびキアンコウの結果はこちら（https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/presentation/results.md）で参照することができる．ただし，本報告で未掲載の魚種は，調査範囲が分布域を網羅できていないことと，調査では採集個体数が少ないことに注意が必要である．また1995年以降の全魚種の現存量と現存尾数の数値はこちら（https://github.com/Yuki-Kanamori/TohokuSokouo/tree/master/results/tables）のhtmlファイルで参照することができる．本報告の計算と作図はこちら（https://github.com/Yuki-Kanamori/TohokuSokouo/tree/master/R）のRコードを用いた．
+以下では主要8魚種（スケトウダラ，マダラ，イトヒキダラ，キチジ，ズワイガニ，アカガレイ，サメガレイ，およびババガレイ）の結果のみ報告するが，スルメイカ，ベニズワイガニ，およびキアンコウの結果はこちら（https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/presentation/results.md）で参照することができる．ただし，本報告で未掲載の魚種は，調査範囲が分布域を網羅できていないことと，調査では採集個体数が少ないことに注意が必要である．
+%また1995年以降の全魚種の現存量と現存尾数の数値はこちら（https://github.com/Yuki-Kanamori/TohokuSokouo/tree/master/results/tables）のhtmlファイルで参照することができる．
+本報告の計算と作図はこちら（https://github.com/Yuki-Kanamori/TohokuSokouo/tree/master/R）のRコードを用いた．
 
 \section{結果と考察}
 \subsection{スケトウダラ0歳魚}
@@ -521,5 +523,5 @@ Yokota M, Kawasaki T (1990) Population biology of the forked hake, \textit{Laemo
   \caption{ババガレイの体長組成の経年変化と直近年の体長組成の拡大図}
 \end{figure}
 
-\end{linenumbers}
+%\end{linenumbers}
 \end{document}
