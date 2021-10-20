@@ -9,4 +9,4 @@
 #### 令和2年度東北ブロック底魚研究連絡会議（2021年3月10-11日）
 - 発表資料は[results/presentation/results.md](https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/results/presentation/results.md)
 - 要旨は[abstract/abst.pdf](https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/abstract/abst.pdf)
-- 原稿は[draft/draft.pdf]()    準備中
+- 原稿は[draft/draft.pdf](https://github.com/Yuki-Kanamori/TohokuSokouo/blob/master/draft/draft.pdf)
